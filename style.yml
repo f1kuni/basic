@@ -18,7 +18,7 @@ sources:
     type: vector
     minzoom: 8
     url: https://tileserver.geolonia.com/v2/tiles.json?key=YOUR-API-KEY
-sprite: https://sprites.geolonia.com/basic-color
+sprite: https://raw.githubusercontent.com/$GITHUB_REPOSITORY/gh-pages/basic
 glyphs: https://glyphs.geolonia.com/{fontstack}/{range}.pbf
 layers:
   - !!inc/file layers/background.yml
