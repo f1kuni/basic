@@ -15,6 +15,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Replace sprite url
+        run: |
+          cd $GITHUB_WORKSPACE
+          git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          node .github/workflows/replace-url.js
+          if (git diff --shortstat | grep '[0-9]'); then \
+            git add .; \
+            git commit -m "Replace sprite url by GitHub Actions"; \
+            git push origin HEAD:${GITHUB_REF}; \
+          fi
+
       - name: Install the `charites`
         run: |
           npm install -g @unvt/charites
@@ -22,7 +35,6 @@ jobs:
       - name: Convert the YAML to GeoJSON
         run: |
           cd $GITHUB_WORKSPACE
-          node .github/workflows/replace-url.js $GITHUB_WORKSPACE
           charites build style.yml style.json
           echo "charites" > .gitignore
 
