@@ -7,7 +7,7 @@
 * しばらくすると `gh-pages` ブランチに `style.json` がコミットされるので、Geolonia Maps で表示する場合は、その URL を以下のように指定してください。
 
 ```
-<div data-style="https://raw.githubusercontent.com/<あなたのGitHubユーザー名>/<リポジトリ名>/gh-pages/style.json"></div>
+<div data-style="https://<あなたのGitHubユーザー名>.github.io/<リポジトリ名>/style.json"></div>
 ```
 
 例: https://codepen.io/naogify/pen/ZEJOErQ
