@@ -27,17 +27,7 @@ layers:
   - !!inc/file layers/landcover-grass-park.yml
   - !!inc/file layers/water.yml
   - !!inc/file layers/water-river-lake-ja.yml
-  - !!inc/file layers/oc-ocean200.yml
-  - !!inc/file layers/oc-ocean1000.yml
-  - !!inc/file layers/oc-ocean2000.yml
-  - !!inc/file layers/oc-ocean3000.yml
-  - !!inc/file layers/oc-ocean4000.yml
-  - !!inc/file layers/oc-ocean5000.yml
-  - !!inc/file layers/oc-ocean6000.yml
-  - !!inc/file layers/oc-ocean7000.yml
-  - !!inc/file layers/oc-ocean8000.yml
-  - !!inc/file layers/oc-ocean9000.yml
-  - !!inc/file layers/oc-ocean10000.yml
+  - !!inc/file layers/oc-ocean.yml
   - !!inc/file layers/oc-glacier.yml
   - !!inc/file layers/oc-forest.yml
   - !!inc/file layers/oc-waterway-river-ja.yml
