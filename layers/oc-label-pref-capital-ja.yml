@@ -22,10 +22,7 @@ layout:
     - right
   icon-image: circle
   icon-allow-overlap: true
-  text-field:
-    - to-string
-    - - get
-      - name
+  text-field: '{name}'
   text-offset:
     - 0.6
     - 0.6

@@ -16,10 +16,7 @@ layout:
   text-font:
     - Noto Sans Regular
   text-size: 14
-  text-field:
-    - to-string
-    - - get
-      - name
+  text-field: '{name}'
   text-max-width: 8
   visibility: visible
 paint:

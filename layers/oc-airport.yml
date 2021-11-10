@@ -19,10 +19,7 @@ layout:
     - Noto Sans Regular
   text-anchor: top
   icon-image: airport
-  text-field:
-    - to-string
-    - - get
-      - name
+  text-field: '{name}'
   text-offset:
     - 0
     - 0.6
