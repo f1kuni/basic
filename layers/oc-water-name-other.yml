@@ -21,10 +21,7 @@ layout:
     - 10
     - 6
     - 14
-  text-field:
-    - to-string
-    - - get
-      - name
+  text-field: '{name}'
   text-max-width: 5
   text-rotation-alignment: map
   symbol-placement: point

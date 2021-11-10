@@ -15,10 +15,7 @@ layout:
   text-font:
     - Noto Sans Regular
   text-size: 14
-  text-field:
-    - to-string
-    - - get
-      - name
+  text-field: '{name}'
   text-max-width: 5
   text-rotation-alignment: map
   symbol-placement: point
