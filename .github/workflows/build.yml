@@ -25,12 +25,12 @@ jobs:
           cd $GITHUB_WORKSPACE
           npm install
           npm run build
-          npm run build:icon
           echo "charites" > .gitignore
 
       - name: Build Icons
         run: |
           cd $GITHUB_WORKSPACE
+          npm run build:icon
           
       - name: Set index.html for preview
         run: |
