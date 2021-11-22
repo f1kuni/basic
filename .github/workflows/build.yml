@@ -14,13 +14,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-          
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'npm'
+
       - name: Convert the YAML to GeoJSON
         run: |
           cd $GITHUB_WORKSPACE
           npm install
           npm run build
-          charites build style.yml style.json --sprite-input icons/ --sprite-output ./
+          npm run build:icon
           echo "charites" > .gitignore
 
       - name: Build Icons

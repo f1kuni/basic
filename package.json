@@ -6,6 +6,7 @@
   "scripts": {
     "start": "charites serve style.yml --provider geolonia",
     "build": "charites build style.yml style.json",
+    "build:icon": "charites build style.yml style.json --sprite-input icons/ --sprite-output ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
