@@ -13,7 +13,7 @@ layout:
 paint:
   fill-color:
     - match
-    - ['get', 'subclass']
+    - ['get', 'depth']
     - 200
     - "#02b7ed"
     - 1000
