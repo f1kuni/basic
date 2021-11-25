@@ -65,7 +65,6 @@ layers:
   - !!inc/file layers/waterway-other.yml
   - !!inc/file layers/waterway-stream-canal.yml
   - !!inc/file layers/waterway-river.yml
-  - !!inc/file layers/tunnel-railway.yml
   - !!inc/file layers/tunnel-service-track-casing.yml
   - !!inc/file layers/tunnel-minor-casing.yml
   - !!inc/file layers/tunnel-secondary-tertiary-casing.yml
