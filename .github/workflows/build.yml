@@ -3,8 +3,9 @@ name: CI
 on:
   push:
     branches: [ main ]
+    
   pull_request:
-    branches: [ main ]
+    branches: [ * ]
 
   workflow_dispatch:
 
@@ -20,7 +21,6 @@ jobs:
           cd $GITHUB_WORKSPACE
           npm install
           npm run build
-          echo "charites" > .gitignore
 
       - name: Build Icons
         run: |
@@ -32,10 +32,7 @@ jobs:
           cd $GITHUB_WORKSPACE
           mv .github/workflows/index.html ./index.html
 
-      - name: Deploy the GeoJSON to `gh-pages`
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy
+        uses: shlinkio/deploy-preview-action@v1.0.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          publish_branch: gh-pages
-          force_orphan: true
+          branch: gh-pages
