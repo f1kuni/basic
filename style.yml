@@ -1,12 +1,11 @@
 $name: Geolonia Basic
 
-$background: rgba(254, 254, 254, 1)
+$background: "#fefefe"
 
 # カスタマイズここまで
 
 version: 8
 name: $name
-metadata: {}
 sources:
   oceanus:
     type: vector
