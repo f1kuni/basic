@@ -1,7 +1,6 @@
 {
   "version": 8,
   "name": "Geolonia Basic",
-  "metadata": {},
   "sources": {
     "oceanus": {
       "type": "vector",
@@ -24,7 +23,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "rgba(254, 254, 254, 1)"
+        "background-color": "#fefefe"
       }
     },
     {
