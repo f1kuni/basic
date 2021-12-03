@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "charites serve style.yml --provider geolonia",
-    "build": "charites build style.yml style.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "charites build style.yml style.json"
   },
   "repository": {
     "type": "git",
