@@ -5,6 +5,9 @@ source-layer: transportation
 minzoom: 4
 filter:
   - all
+  - - '=='
+    - $type
+    - LineString
   - - '!in'
     - brunnel
     - bridge
@@ -12,6 +15,8 @@ filter:
   - - '=='
     - class
     - motorway
+  - - '!has'
+    - ramp
 layout:
   line-cap: butt
   line-join: round

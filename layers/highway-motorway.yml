@@ -8,14 +8,15 @@ filter:
   - - '=='
     - $type
     - LineString
-  - - all
-    - - '!in'
-      - brunnel
-      - bridge
-      - tunnel
-    - - '=='
-      - class
-      - motorway
+  - - '!in'
+    - brunnel
+    - bridge
+    - tunnel
+  - - '=='
+    - class
+    - motorway
+  - - '!has'
+    - ramp
 layout:
   line-cap: round
   line-join: round
