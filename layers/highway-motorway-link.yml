@@ -11,12 +11,15 @@ filter:
     - tunnel
   - - '=='
     - class
-    - motorway_link
+    - motorway
+  - - '=='
+    - ramp
+    - 1
 layout:
   line-cap: round
   line-join: round
 paint:
-  line-color: '#fc8'
+  line-color: '#ffffff'
   line-width:
     base: 1.2
     stops:

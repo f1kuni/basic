@@ -90,7 +90,7 @@ layers:
   - !!inc/file layers/highway-trunk-casing.yml
   - !!inc/file layers/highway-motorway-casing.yml
   - !!inc/file layers/highway-path.yml
-  # - !!inc/file layers/highway-motorway-link.yml
+  - !!inc/file layers/highway-motorway-link.yml
   - !!inc/file layers/highway-link.yml
   - !!inc/file layers/highway-minor.yml
   - !!inc/file layers/highway-secondary-tertiary.yml
