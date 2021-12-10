@@ -8,20 +8,19 @@ filter:
   - - '=='
     - $type
     - LineString
-  - - all
-    - - '!='
-      - brunnel
-      - tunnel
-    - - in
-      - class
-      - minor
-      - service
-      - track
+  - - '!='
+    - brunnel
+    - tunnel
+  - - in
+    - class
+    - minor
+    - service
+    - track
 layout:
   line-cap: round
   line-join: round
 paint:
-  line-color: '#fff'
+  line-color: '#ffffff'
   line-opacity: 1
   line-width:
     base: 1.2
