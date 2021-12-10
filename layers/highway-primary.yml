@@ -7,20 +7,18 @@ filter:
   - - '=='
     - $type
     - LineString
-  - - all
-    - - '!in'
-      - brunnel
-      - bridge
-      - tunnel
-    - - in
-      - class
-      - primary
+  - - '!in'
+    - brunnel
+    - bridge
+    - tunnel
+  - - in
+    - class
+    - primary
 layout:
   line-cap: round
   line-join: round
-  visibility: visible
 paint:
-  line-color: rgba(255, 255, 255, 1)
+  line-color: '#ffffff'
   line-width:
     base: 1.2
     stops:
