@@ -56,18 +56,18 @@
     map.on('load', () => {
 
       const dumpFeature = event => {
-        const layers = []
+        // const layers = []
         const features = map.queryRenderedFeatures(event.point)
 
-        for (var i in features) {
-          const item = features[i]
-          if ('properties' in item) {
-            layers.push(item.properties)
-          }
-        }
+        // for (var item in features) {
+        //   console.log(item)
+        //   if ('properties' in item) {
+        //     layers.push(item.properties)
+        //   }
+        // }
 
         const jsonContainer = document.getElementById('json')
-        jsonContainer.innerText = JSON.stringify(layers, null, '  ')
+        jsonContainer.innerText = JSON.stringify(features, null, '  ')
       }
 
       const mouseEnter = () => {
