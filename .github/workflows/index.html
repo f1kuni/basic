@@ -59,8 +59,8 @@
         const layers = []
         const features = map.queryRenderedFeatures(event.point)
 
-        for (var item in features) {
-          console.log(item)
+        for (var i in features) {
+          const item = features[i]
           if ('properties' in item) {
             layers.push(item.properties)
           }
