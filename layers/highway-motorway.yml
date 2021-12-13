@@ -20,7 +20,6 @@ filter:
 layout:
   line-cap: round
   line-join: round
-  visibility: visible
 paint:
   line-color: '#ffffff'
   line-width:
