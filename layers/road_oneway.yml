@@ -23,15 +23,15 @@ filter:
 layout:
   symbol-placement: line
   icon-image: oneway
-  symbol-spacing: 150
+  symbol-spacing: 250
   icon-padding: 2
   icon-rotation-alignment: map
   icon-rotate: 90
   icon-size:
     stops:
       - - 15
-        - 0.5
+        - 0.4
       - - 19
-        - 0.6
+        - 0.8
 paint:
-  icon-opacity: 0.3
+  icon-opacity: 0.4
